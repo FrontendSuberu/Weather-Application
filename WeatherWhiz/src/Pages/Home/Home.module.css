@@ -1,3 +1,74 @@
-.txt{
-    font-size: 15px;
+/* given variables */
+:root{
+    --main-clr: black;
+}
+
+/* navbar */
+.navigation{
+    display: none;
+}
+
+/* header cnt */
+.innerheader{
+    padding-block: 1vw;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+
+/* logo */
+.logo svg{
+    width: 40px;
+    height: 41px;
+}
+
+/* github link */
+.github{
+    display: flex;
+    align-items: center;
+    width: 24px;
+}
+
+/* menu bars */
+.menu div{
+    width: 24px;
+    height: 2px;
+    margin: 4px 0;
+    border-radius: 4px;
+    background: var(--main-clr);
+}
+
+
+
+/* media queries */
+@media (min-width:1024px) {
+    .navigation{
+        display: block;
+    }
+
+    .innernavigation{
+        display: flex;
+        gap: 10px;
+    }
+
+    .menu{
+        display: none;
+    }
+
+    .logo svg{
+        width: 61px;
+        height: 60px;
+    }
+
+    .logo{
+        gap: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .github{
+        width: 40px;
+    }
 }
