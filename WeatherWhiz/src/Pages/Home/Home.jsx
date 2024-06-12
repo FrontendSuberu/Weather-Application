@@ -1,10 +1,18 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
+import FeatureCSS from "../Home/Feature.module.css"
 import HomeCSS from "../Home/Home.module.css"
-
+import Illustrate01 from "../Home/assets/realtimeupdate.svg"
+import Illustrate02 from "../Home/assets/forecast.svg"
+import Illustrate03 from "../Home/assets/customizable.svg"
+import Illustrate04 from "../Home/assets/responsive.svg"
+import TryoutCss from "../Home/Tryout.module.css"
+import introimg from "../Home/assets/getstarted.svg"
+import AboutCss from "../Home/About.module.css"
 export default function Home() {
     return (
         <>
+        {/* header */}
             <header>
 
                 <div className={`container`}>
@@ -28,7 +36,7 @@ export default function Home() {
                         <nav className={HomeCSS.navigation}>
                             <ul className={HomeCSS.innernavigation}>
                                 <li>
-                                    <Link>Home</Link>
+                                    <Link className={HomeCSS.active}>Home</Link>
                                 </li>
                                 <li>
                                     <Link>Features</Link>
@@ -52,6 +60,101 @@ export default function Home() {
 
                 </div>
             </header>
+
+        {/* introduction */}
+            <section className={HomeCSS.intro}>
+                <div className={`container`}>
+
+                <div className={HomeCSS.introcontent}>
+
+                    <div className={HomeCSS.introimage}>
+                        <img src={introimg} alt="User" />
+                    </div>
+
+
+                    <div className={HomeCSS.intro_txt}>
+                        <h1>Your Go-To Destination for Up to Date Weather Forecasts</h1>
+                        <p>Stay informed and prepared with Weather Whiz – your comprehensive weather companion. Get accurate and reliable weather forecasts directly from your browser, anytime, anywhere.</p>
+                    </div>
+
+                </div>
+
+                </div>
+            </section>
+
+        {/* features */}
+            <section className={FeatureCSS.feature_field}>
+            <div className={`container`}>
+
+                <div className={FeatureCSS.intro}>
+                    <h1>Key Features</h1>
+                </div>
+
+
+                <div className={FeatureCSS.feature1}>
+                    <div className={FeatureCSS.illustration}>
+                        <img src={Illustrate01} alt="a map with details" />
+                    </div>
+
+                    <div className={FeatureCSS.featurecontent}>
+                        <p>Real-time weather updates for any location</p>
+                    </div>
+                </div>
+
+                <div className={FeatureCSS.feature2}>
+                    <div className={FeatureCSS.illustration}>
+                        <img src={Illustrate02} alt="Detailed forecasts for the upcoming days" />
+                    </div>
+
+                    <div className={FeatureCSS.featurecontent}>
+                        <p>Detailed forecasts for the upcoming days</p>
+                    </div>
+                </div>
+
+                <div className={FeatureCSS.feature3}>
+                    <div className={FeatureCSS.illustration}>
+                        <img src={Illustrate03} alt="a gear with rotating arrows" />
+                    </div>
+
+                    <div className={FeatureCSS.featurecontent}>
+                        <p>Customizable units for temperature, wind speed, and more</p>
+                    </div>
+                </div>
+                
+                <div className={FeatureCSS.feature4}>
+                    <div className={FeatureCSS.illustration}>
+                        <img src={Illustrate04} alt="a gear with rotating arrows" />
+                    </div>
+
+                    <div className={FeatureCSS.featurecontent}>
+                        <p>Responsive design for seamless browsing on any device.</p>
+                    </div>
+                </div>
+
+            </div>
+            </section>
+
+        {/* try it out */}
+        <section className={TryoutCss.tryout}>
+        <div className={`container`}>
+            <div className={TryoutCss.intro}>
+                <h1>Try it Out</h1>
+                <p>Explore Weather Whiz now to plan your day with confidence. Click below to access the application</p>
+
+                <Link className={TryoutCss.button}>Start Exploring Weather Whiz</Link>
+            </div>
+        </div>
+        </section>
+
+
+        {/* About us */}
+        <section className={AboutCss.aboutus}>
+            <div className={`container`}>
+                <div className={AboutCss.intro}>
+                    <p>CREATOR OF WEATHER WHIZ</p>
+                </div>
+            </div>
+        </section>
         </>
     )
 }

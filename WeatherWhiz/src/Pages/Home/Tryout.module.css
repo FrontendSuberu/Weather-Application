@@ -1,0 +1,73 @@
+.tryout{
+    margin-block: 20px;
+
+}
+
+.intro{
+    text-align: center;
+}
+.intro h1{
+    font-size: 28px;
+    padding: 8px 0;
+}
+
+.intro p{
+    font-size: 16px;
+    padding: 8px 0;
+}
+
+.button {
+    width: 100%;
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    color: #fff; /* Text color */
+    background-color: #007bff; /* Background color */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Slight shadow */
+    transition: all 0.3s ease; /* Smooth transition */
+}
+
+.button:hover{
+    background-color: #0056b3; /* Darker background on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Deeper shadow */
+    transform: translateY(-2px); /* Slight lift */
+}
+
+/* Active effect */
+.button:active {
+    background-color: #003f7f; /* Even darker background on active */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Less shadow */
+    transform: translateY(0); /* Reset lift */
+}
+
+.primary{
+    background-color: #007bff;
+}
+
+/* media queries */
+@media (min-width:640px) {
+    .intro h1 {
+        font-size: 32px;
+      }
+}
+
+
+@media (min-width:768px) {
+    .button{
+        width: initial;
+    }
+}
+
+@media (min-width: 1024px) {
+    .intro p{
+        font-size: 24px;
+    }
+   
+    .intro h1 {
+      font-size: 60px;
+    }
+  }
