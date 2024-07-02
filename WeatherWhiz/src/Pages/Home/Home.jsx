@@ -7,8 +7,8 @@ import Illustrate02 from "../Home/assets/forecast.svg"
 import Illustrate03 from "../Home/assets/customizable.svg"
 import Illustrate04 from "../Home/assets/responsive.svg"
 import TryoutCss from "../Home/Tryout.module.css"
+import FooterCss from "../Home/Footer.module.css"
 import introimg from "../Home/assets/getstarted.svg"
-import AboutCss from "../Home/About.module.css"
 export default function Home() {
     return (
         <>
@@ -25,9 +25,9 @@ export default function Home() {
                         </menu>
 
 
-                        <logo className={HomeCSS.logo}>
+                        <div className={HomeCSS.logo}>
                         <Link to="/">
-                            <svg width="" height="" aria-details='Logo' viewBox="0 0 61 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <svg aria-details='Logo' viewBox="0 0 61 60" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <rect width="61" height="60" rx="20" fill="black" />
                                 <path d="M20.912 43L14.352 19.16H18.352L23.664 39.8H22.672L28.176 19.16H32.112L37.616 39.8H36.592L41.936 19.16H45.904L39.376 43H35.12L29.584 22.68H30.704L25.136 43H20.912Z" fill="#FCFCFC" />
                             </svg>
@@ -50,7 +50,7 @@ export default function Home() {
                             </ul>
                         </nav>
 
-                        </logo>
+                        </div>
 
 
                         <div className={HomeCSS.github}>
@@ -141,20 +141,19 @@ export default function Home() {
                 <h1>Try it Out</h1>
                 <p>Explore Weather Whiz now to plan your day with confidence. Click below to access the application</p>
 
-                <Link className={TryoutCss.button}>Start Exploring Weather Whiz</Link>
+                <Link to="/weatherWhiz-Weather" className={TryoutCss.button}>Start Exploring Weather Whiz</Link>
             </div>
         </div>
         </section>
 
+{/* footer */}
+<section className={FooterCss.footer}>
+<div className={`container`}>
+    <p>Made with Love from Nigeria</p>
+</div>
+</section>
 
-        {/* About us */}
-        <section className={AboutCss.aboutus}>
-            <div className={`container`}>
-                <div className={AboutCss.intro}>
-                    <p>CREATOR OF WEATHER WHIZ</p>
-                </div>
-            </div>
-        </section>
+       
         </>
     )
 }

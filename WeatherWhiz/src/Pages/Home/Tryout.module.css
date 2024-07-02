@@ -7,6 +7,7 @@
     text-align: center;
 }
 .intro h1{
+    font-family: 'Mabry Pro';
     font-size: 28px;
     padding: 8px 0;
 }
@@ -21,8 +22,9 @@
     display: inline-block;
     padding: 12px 24px;
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 450;
     text-align: center;
+    font-family: 'Mabry Pro';
     text-decoration: none;
     color: #fff; /* Text color */
     background-color: #007bff; /* Background color */
