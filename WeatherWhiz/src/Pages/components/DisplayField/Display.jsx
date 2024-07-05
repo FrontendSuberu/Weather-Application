@@ -51,7 +51,7 @@ export default function Display() {
       const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=db11b493e04596fcad665032c4455652`;
       const response = await fetch(url);//
       const data = await response.json();
-      console.log(data)
+      console.log(data);
       const icon = allIcons[data.weather[0].icon] || Sun;
       setWeatherData({
         humidity: data.main.humidity,
