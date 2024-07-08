@@ -1,0 +1,18 @@
+.logo{
+    width: 61px;
+    height: 60px;
+}
+
+.navfield{
+    /* display: flex; */
+    /* flex-direction: column; */
+    display: none;
+    /* justify-content: space-between; */
+}
+
+
+
+.navigation p{
+    display: none;
+}
+

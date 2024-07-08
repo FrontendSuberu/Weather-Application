@@ -1,43 +1,76 @@
 .intro h1 {
-  font-family: 'Mabry Pro';
-
+  font-weight: 450;
   padding-block: 8px;
   text-align: center;
   font-size: 28px;
 }
 
 .illustration {
-  padding-top: 36px;
+  width: 60px;
+  height: 60px;
+  padding: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #E7E8EC;
+  border-radius: 10px;
+  /* padding-top: 36px; */
 }
 
 .illustration img {
-  width: 100%;
+  width: 50%;
 }
 
 .featurecontent p {
   padding-block: 8px;
-  text-align: center;
+  /* text-align: center; */
   font-size: 16px;
+}
+
+.feature1{
+  padding: 24px;
+  border-radius: 10px;
+  gap: 10px;
+  margin: 0 14px;
+  flex-direction: column;
+  display: flex;
+  background: #F6F6F7;
 }
 
 .feature2 {
   margin-top: 20px;
   display: flex;
-  justify-content: space-around;
+  border-radius: 10px;
+  margin-inline: 14px;
+  padding: 24px;
+  background: #F6F6F7;
+  justify-content: left;
+  gap: 10px;
   flex-direction: column;
 }
 
 .feature3{
   margin-top: 20px;
   display: flex;
-  justify-content: space-around;
+  border-radius: 10px;
+  margin-inline: 14px;
+  padding: 24px;
+  background: #F6F6F7;
+  justify-content: left;
+  gap: 10px;
   flex-direction: column;
 }
 
 .feature4{
   margin-top: 20px;
   display: flex;
-  justify-content: space-around;
+  border-radius: 10px;
+  margin-inline: 14px;
+  padding: 24px;
+  background: #F6F6F7;
+  display: flex;
+  justify-content: left;
+  gap: 10px;
   flex-direction: column;
 }
 
@@ -50,7 +83,6 @@
 @media (min-width: 640px) {
   .feature1 {
     display: flex;
-    justify-content: space-around;
     flex-direction: row;
     align-items: center;
   }
@@ -59,34 +91,35 @@
   }
 
   .feature2 {
-    margin-top: 40px;
-    flex-direction: row-reverse;
+    margin-top: 20px;
     align-items: center;
+    flex-direction: row;
+
   }
 
   .feature3 {
-    margin-top: 40px;
     flex-direction: row;
+    margin-top: 20px;
     align-items: center;
   }
 
   .feature4 {
-    margin-top: 40px;
-    flex-direction: row-reverse;
+    flex-direction: row;
+    margin-top: 20px;
     align-items: center;
   }
 }
 
 @media (min-width: 890px) {
-  .featurecontent p {
+  /* .featurecontent p {
     font-size: 24px;
-  }
+  } */
 }
 
 @media (min-width: 1024px) {
-  .featurecontent p {
+  /* .featurecontent p {
     font-size: 28px;
-  }
+  } */
 
   .illustration img{
     height: initial;

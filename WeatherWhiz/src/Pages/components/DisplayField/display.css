@@ -12,9 +12,7 @@
     height: 100%;
 }
 
-.location h3{
-    font-family: 'Mabry Pro';
-}
+
 
 .temperature{
     margin-block: 24px;
@@ -89,7 +87,6 @@
     margin: 0 auto;
     padding: 10px;
     margin-block: 8px;
-    font-family: 'Mabry Pro';
     background: #EEF2F4;
     flex-wrap: wrap;
     justify-content: center;
@@ -128,7 +125,7 @@
 
 .homepagenull{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     flex-direction: column;
     gap: 4px;
     text-align: center;
@@ -136,12 +133,18 @@
     background-image: url(/WeatherWhiz/public/vite.svg);
 }
 
+.homepagenull h2{
+    font-weight: 600;
+    font-size: 35px;
+}
+
 .homepagenull p{
     padding-block: 8px;
-    font-size: 20px;
+    font-size: 14px;
 }
 
 .homepagenull input{
+    font-size: 14px;
     margin-right: 4px;
     margin-bottom: 8px;
 }
@@ -159,12 +162,12 @@
 #dataArea{
     font-size: 14px;
     display: inline-block;
+    right: 32px;
     padding: 12px 24px;
     font-weight: 450;
     border: none;
     text-align: center;
-    font-family: 'Mabry Pro';
-    height: 50px;
+    /* height: 50px; */
     text-decoration: none;
     color: #fff; /* Text color */
     background-color: #007bff; /* Background color */
@@ -184,11 +187,12 @@
     outline: none;
     padding-left: 12px;
     padding-block:8px;
+    position: relative;
     width: 280px;
     height: 50px;
     padding-right: 4px;
     border: none;
-    font-size: 15px;
+    font-size: 14px;
     color: #626262;
     border: 1px solid #EEF2F4;
     border-radius: 8px;
@@ -235,6 +239,11 @@
         display: block;
     }
 
+    .homepagenull h2{
+        font-weight: 600;
+        font-size: 54px;
+    }
+
     #dtacheck{
         font-size: 14px;
     display: inline-block;
@@ -242,7 +251,6 @@
     font-weight: 450;
     border: none;
     text-align: center;
-    font-family: 'Mabry Pro';
     text-decoration: none;
     color: #fff; /* Text color */
     background-color: #007bff; /* Background color */

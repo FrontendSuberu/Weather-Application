@@ -7,8 +7,8 @@
     text-align: center;
 }
 .intro h1{
-    font-family: 'Mabry Pro';
     font-size: 28px;
+    font-weight: 500;
     padding: 8px 0;
 }
 
@@ -17,6 +17,8 @@
     padding: 8px 0;
 }
 
+
+
 .button {
     width: 100%;
     display: inline-block;
@@ -24,7 +26,6 @@
     font-size: 16px;
     font-weight: 450;
     text-align: center;
-    font-family: 'Mabry Pro';
     text-decoration: none;
     color: #fff; /* Text color */
     background-color: #007bff; /* Background color */
@@ -64,11 +65,7 @@
     }
 }
 
-@media (min-width: 1024px) {
-    .intro p{
-        font-size: 24px;
-    }
-   
+@media (min-width: 1024px) {   
     .intro h1 {
       font-size: 60px;
     }

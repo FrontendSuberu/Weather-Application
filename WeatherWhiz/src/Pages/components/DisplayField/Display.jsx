@@ -6,7 +6,6 @@ import Snow from "../DisplayField/icons/snow.svg"
 
 // import axios from 'axios'
 import '../DisplayField/display.css';
-import Error from "../Error/Error"
 
 export default function Display() {
 
@@ -43,6 +42,8 @@ export default function Display() {
     //   return;
     // }
 
+    
+
     //try and catch used for error handling
     //async - used to locate data 
     //fetch - used to fetch
@@ -63,7 +64,6 @@ export default function Display() {
         icon: icon,
         sealevel: data.main.sea_level
       })
-
 
     } catch (error) {
 
@@ -106,7 +106,7 @@ export default function Display() {
               <button onClick={() => search(inputref.current.value)} id="dtacheck">Check</button>
             </form>
 
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 17 17" fill="none" role="img" class="icon nav-v2-search-btn__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 17 17" fill="none" role="img" className="icon nav-v2-search-btn__icon">
               <path d="M1.5 7.75C1.5 9.4076 2.15848 10.9973 3.33058 12.1694C4.50269 13.3415 6.0924 14 7.75 14C9.4076 14 10.9973 13.3415 12.1694 12.1694C13.3415 10.9973 14 9.4076 14 7.75C14 6.0924 13.3415 4.50269 12.1694 3.33058C10.9973 2.15848 9.4076 1.5 7.75 1.5C6.0924 1.5 4.50269 2.15848 3.33058 3.33058C2.15848 4.50269 1.5 6.0924 1.5 7.75V7.75Z" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"></path>
               <path d="M12.814 12.8132L15.5 15.4999" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"></path>
             </svg>
@@ -164,8 +164,12 @@ export default function Display() {
         </>:
         <>
         <div className="homepagenull">
-          <p>Search for a Location</p>
+        <div>
+        <h2 className="">WeatherWhiz</h2>
+        <p>Version 1.0</p>
+        </div>
           <form action="#" method="#" >
+          <p>Search for a Location</p>
               <input type="text" required ref={inputref} placeholder="Search your City" name="" id="datafieldnull" />
               <button id="dataArea" onClick={() => search(inputref.current.value)}>Check</button>
             </form>

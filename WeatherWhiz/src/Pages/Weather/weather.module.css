@@ -1,0 +1,12 @@
+.split{
+    /* display: flex; */
+    flex-direction: row;
+}
+
+.weather{
+    height: 100vh;
+    width: 100vw;
+}
+
+
+

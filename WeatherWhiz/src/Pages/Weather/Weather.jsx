@@ -1,6 +1,5 @@
 import Display from "../components/DisplayField/Display"
 import Dataheader from "../components/Dataheader/Dataheader"
-import Mobilenav from "../components/MobileNav/Mobilenav"
 import "../Weather/weather.css"
 
 export default function Weather() {
@@ -17,10 +16,6 @@ export default function Weather() {
         <Display />
       </div>
 
-
-      <div className="mobile_nav">
-        <Mobilenav />
-      </div>
 
     </div>
   )
