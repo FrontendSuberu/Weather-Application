@@ -1,5 +1,5 @@
 {
     "rewrites": [
-        {"source": "/(.*)", "destination": "../src/Pages/Home/Home"}
+        {"source": "/(.*)", "destination": "WaetherWhiz/src/Pages/Home/Home.jsx"}
     ]
 }
